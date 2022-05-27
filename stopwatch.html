@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Stopwatch</title>
+
+  <style>
+
+    #start {
+      position: absolute;
+      background-color: blue;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+      'Lucida Sans Unicode', Arial, sans-serif;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      margin: 4px 2px;
+      border-radius: 16px;
+      top: 350px;
+      left: 530px;
+      cursor: pointer;
+    }
+
+    #reset {
+      position: absolute;
+      background-color: yellow;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+      'Lucida Sans Unicode', Arial, sans-serif;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      margin: 4px 2px;
+      border-radius: 16px;
+      top: 350px;
+      left: 680px;
+      cursor: pointer;
+    }
+
+    #stop {
+      position: absolute;
+      background-color: red;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+      'Lucida Sans Unicode', Arial, sans-serif;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      margin: 4px 2px;
+      border-radius: 16px;
+      top: 350px;
+      left: 830px;
+      cursor: pointer;
+    }
+
+    body {
+      background-color: green;
+    }
+
+    h1 {
+      position: absolute;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+      'Lucida Sans', Arial, sans-serif;
+      font-size: 70px;
+      color: white;
+      top: 130px;
+      left: 525px;
+    }
+
+    h2 {
+      position: absolute;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+      'Lucida Sans', Arial, sans-serif;
+      font-size: 70px;
+      color: white;
+      top: 200px;
+      left: 575px;
+    }
+
+  </style>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="stopwatch.js"></script>
+
+  <body>
+
+    <h1 id="main-heading">
+      STOPWATCH
+    </h1>
+
+    <h2 id="time">
+      00:00:00
+    </h2>
+
+    <div class="btn-group">
+      <button id="start", onclick="start()">START</button>
+      <button id="reset", onclick="reset()">RESET</button>
+      <button id="stop", onclick="stop()">STOP</button>
+    </div>
+
+  </body>
+
+</head>
+</html>
